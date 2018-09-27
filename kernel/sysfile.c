@@ -67,7 +67,6 @@ sys_read(void)
   int n;
   char *p;
   
-  printf(1,"here\n");
   readcount += 1;
   
   if(argfd(0, 0, &f) < 0 || argint(2, &n) < 0 || argptr(1, &p, n) < 0)
