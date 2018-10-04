@@ -1,9 +1,13 @@
 #include "types.h"
 #include "user.h"
+#include "stat.h"
 
 int main(int argc, char** argv)
 {
-	printf(1, "getreadcount(): %d\n", getreadcount());
+	int a;
+
+	a = getreadcount();
+	printf(1, "getreadcount(): %d\n",a);
 	
 	exit();
 }
